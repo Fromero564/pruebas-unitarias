@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "Jost";
+    src: url("./assets/font/Jost-VariableFont_wght.ttf"),
+         url("./assets/font/Jost-Italic-VariableFont_wght.ttf");
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box; 
+    font-family: "Jost",sans-serif;
+}
+
+
+
+
+
