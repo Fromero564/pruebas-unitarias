@@ -1,6 +1,6 @@
 import './Ourclients.css';
 import fondo from '../assets/img/Ourclients/fondo.svg'
-import icono from '../assets/img/Ourclients/icono.svg'
+// import icono from '../assets/img/Ourclients/icono.svg'
 
 
 
