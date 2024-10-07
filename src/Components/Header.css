@@ -1,66 +1,140 @@
-
 .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+.logo {
+  max-width: 350px;
+  margin-left: 50px;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 50px;
+  height: 6px;
+  background-color: #19255b;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+.hamburger .close-icon {
+  font-size: 30px;
+  color: #19255b;
+  cursor: pointer;
+}
+
+.nav-menu {
+  flex: 2;
+  text-align: right;
+  margin-right: 50px;
+}
+
+.nav-menu ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.nav-menu ul li {
+  margin-left: 30px;
+}
+
+.nav-menu ul li a {
+  text-decoration: none;
+  color: #19255b;
+  font-size: 38px;
+  font-weight: 400;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-menu ul li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: -5px; 
+  left: 0;
+  background-color: #19255b;
+  transition: width 0.3s ease; 
+}
+
+.nav-menu ul li a:hover {
+  color: #000; 
+}
+
+.nav-menu ul li a:hover::after {
+  width: 100%; 
+}
+
+/* Estilos para la versión responsive */
+@media (max-width: 768px) {
+  .hamburger {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    position: fixed;
-    top: 0;
+    z-index: 1001;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 60px;
     left: 0;
+    background-color: #fff;
     width: 100vw;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 0;
+    overflow: hidden;
+    transition: height 0.4s ease;
+    z-index: 1000; 
   }
-  
-  .logo-container {
-    flex: 1;
+
+  .nav-menu.open {
+    height: 100vh; 
   }
-  
+
+  .nav-menu ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 100%; 
+    justify-content: center;
+  }
+
+  .nav-menu ul li {
+    margin: 20px 0;
+  }
+
+  .nav-menu ul li a {
+    font-size: 25px;
+  }
+
   .logo {
-    margin-left: 50px;
+    margin-left: 0;
     max-width: 250px;
   }
-  
-  .nav-menu {
-    flex: 2;
-    text-align: right;
-    margin-right: 50px;
-  }
-  
-  .nav-menu ul {
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-  }
-  
-  .nav-menu ul li {
-    margin-left: 30px;
-  }
-  
-  .nav-menu ul li a {
-    text-decoration: none;
+
+  .close-icon {
+    font-size: 30px;
     color: #19255b;
-    font-size: 25px;
-    font-weight: 450;
+    cursor: pointer;
+    display: block;
+    z-index: 1001; 
   }
-  
-  @media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-      align-items: center;
-      padding: 10px;
-    }
-  
-    .nav-menu ul {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .nav-menu ul li {
-      margin: 10px 0;
-    }
-  
-    .logo {
-      margin-bottom: 10px;
-    }
-  }
+}

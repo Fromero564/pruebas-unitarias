@@ -1,5 +1,6 @@
 import './Presentation.css'
 import Carousel from 'react-bootstrap/Carousel';
+import { Button } from 'react-bootstrap'; 
 import Agua from '../assets/img/Presentation/aguapresentacion.jpg'
 
 
@@ -17,7 +18,9 @@ const Presentation = ()=>{
         />
         <Carousel.Caption>
           <h3>TECNOLOGÍA AL SERVICIO DEL AGUA</h3>
-          
+          <a href="#contacto">
+          <Button variant="primary">MÁS INFORMACIÓN</Button> 
+          </a>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={1000}>
@@ -29,7 +32,9 @@ const Presentation = ()=>{
         />
         <Carousel.Caption>
         <h3>TECNOLOGÍA AL SERVICIO DEL AGUA</h3>
-        
+        <a href="#contacto">
+          <Button variant="primary">MÁS INFORMACIÓN</Button> 
+          </a>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={1000}>
@@ -41,7 +46,9 @@ const Presentation = ()=>{
         />
         <Carousel.Caption>
         <h3>TECNOLOGÍA AL SERVICIO DEL AGUA</h3>
-          
+        <a href="#contacto">
+          <Button variant="primary">MÁS INFORMACIÓN</Button> 
+          </a>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

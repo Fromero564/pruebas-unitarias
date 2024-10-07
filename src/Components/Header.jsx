@@ -1,24 +1,41 @@
-import './Header.css'
-import logo from '../assets/img/Navbar/logo.png'
+import './Header.css';
+import logo from '../assets/img/Navbar/logo.png';
+import { useState } from 'react';
 
-const Header = ()=>{
-    return(
-        <header className="navbar">
-          <div className="logo-container">
-            <img src={logo} alt="Smart Aqua Logo" className="logo" />
-          </div>
-            <nav className="nav-menu">
-             <ul>
-               <li><a href="#empresa">Empresa</a></li>
-               <li><a href="#productos">Productos</a></li>
-               <li><a href="#clientes">Clientes</a></li>
-               <li><a href="#contacto">Contacto</a></li>
-             </ul>
-            </nav>
-      
-        </header>
-    )
-}
+const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-export default Header
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
+  return (
+    <header className="navbar">
+      <div className="logo-container">
+        <a href="#"><img src={logo} alt="Smart Aqua Logo" className="logo" /></a>
+      </div>
+      <div className="hamburger" onClick={toggleMenu}>
+  
+        {isOpen ? (
+          <span className="close-icon">✕</span>
+        ) : (
+          <>
+            <span className="bar"></span>
+            <span className="bar"></span>
+            <span className="bar"></span>
+          </>
+        )}
+      </div>
+      <nav className={`nav-menu ${isOpen ? 'open' : ''}`}>
+        <ul>
+          <li><a href="#empresa">Empresa</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#clientes">Clientes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+  );
+};
+
+export default Header;

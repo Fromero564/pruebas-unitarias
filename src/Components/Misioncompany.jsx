@@ -3,7 +3,7 @@ import Background from '../assets/img/Misioncompany/background.png'
 
 const Misioncompany = ()=>{
     return(
-      <div className="smart-aqua-container" style={{ backgroundImage: `url(${Background})` }}>
+      <section className="smart-aqua-container" style={{ backgroundImage: `url(${Background})` }} id="empresa">
       <div className="content-container">
         <div className="left-section">
           <h2>"Revolucionando el futuro del agua"</h2>
@@ -17,17 +17,17 @@ const Misioncompany = ()=>{
         <div className="right-section">
           <h2>Nuestros valores:</h2>
           <ul>
-            <li>Innovación continua</li>
-            <li>Sostenibilidad</li>
-            <li>Compromiso con la calidad</li>
-            <li>Responsabilidad social</li>
-            <li>Integridad</li>
-            <li>Colaboración</li>
-            <li>Orientación al cliente</li>
+          <li> <i class="fa-solid fa-droplet"></i>Innovación continua</li>
+            <li> <i class="fa-solid fa-droplet"></i>Sostenibilidad</li>
+            <li> <i class="fa-solid fa-droplet"></i>Compromiso con la calidad</li>
+            <li> <i class="fa-solid fa-droplet"></i>Responsabilidad social</li>
+            <li> <i class="fa-solid fa-droplet"></i>Integridad</li>
+            <li> <i class="fa-solid fa-droplet"></i>Colaboración</li>
+            <li> <i class="fa-solid fa-droplet"></i>Orientación al cliente</li>
           </ul>
         </div>
       </div>
-    </div>
+    </section>
     )
 }
 

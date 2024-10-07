@@ -9,6 +9,7 @@
     left: 0;
     right: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -17,4 +18,20 @@
 
   .Presentation .carousel-caption h3 {
     font-size: 50px;
+    margin-top: 150px;
   }
+
+  .Presentation .btn-primary {
+    background-color: #19255b; 
+    border: none;
+    padding: 8px 80px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+   margin-top: 150px;
+    font-weight: bold;
+  }
+  
+  .Presentation .btn-primary:hover {
+    background-color: #0f1c3d; 
+  }
+

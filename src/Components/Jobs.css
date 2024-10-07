@@ -1,6 +1,111 @@
-.Jobs{
-    width: 100vw;
+.jobs-background {
+ min-height: 100vh;
+  background-color: #19255a;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-background-jobs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 95vh;
+  transform: translate(-50%, -50%);
+  /* filter: brightness(0.7);  */
+  opacity: 0.25;
+  width: auto;
+}
+
+.content-box-jobs {
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.job-text-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.img-jobs-only {
+  display: flex;
+  justify-content: space-evenly; 
+  
+  width: 100%;
+}
+
+.img-jobs-only div {
+  width: 300px; 
+  height: 200px; 
+  overflow: hidden; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px; 
+}
+
+.img-jobs-only img {
+  width: 100%;
+  height: auto; 
+}
+
+.text-img-jobs{
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+ margin-bottom: 100px;
+}
+
+.text-img-jobs h1{
+  color: #fff;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.text-img-jobs img{
+  width: 40vw;
+  height: 300px;
+}
+@media (max-width: 768px) {
+  .img-jobs-only {
+    flex-direction: column; 
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center; 
+  }
+
+  .img-jobs-only div {
+    margin-bottom: 20px;
+    width: 100%; 
+    max-width: 300px; 
+  }
+
+  .img-jobs-only img {
+    width: 100%;
     height: auto;
-    overflow: hidden;
-    background-color: chocolate;
+  }
+
+  .text-img-jobs {
+    flex-direction: column;
+  }
+
+  .text-img-jobs img {
+    width: 80vw; 
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  .text-img-jobs h1 {
+    font-size: 32px;
+  }
 }
