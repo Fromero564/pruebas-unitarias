@@ -12,7 +12,7 @@ const Ourclients = () => {
         <h1>Nuestros clientes</h1>
      <div className='reviews-boxes'>
         <article className='article-class'>
-                 <img src={icono} className="icon-class" alt="logo" />
+                 {/* <img src={icono} className="icon-class" alt="logo" /> */}
                  <p>SmartAqua facilita
                  tomar decisiones,
                  anticiparse a las fallas,
@@ -25,7 +25,7 @@ const Ourclients = () => {
            </div>
         </article>
         <article className='article-class'>
-        <img src={icono} className="icon-class" alt="logo" />
+        {/* <img src={icono} className="icon-class" alt="logo" /> */}
                  <p>Recomiendo los productos y Servicios de SmartAqua y su empresa asociada Ingeniería SCH en el desarrollo de productos y de sistemas de Ciudad Inteligente.</p>
         <div className='testimony-box'>
         
@@ -36,7 +36,7 @@ const Ourclients = () => {
 
         </article>
         <article className='article-class'>
-        <img src={icono} className="icon-class" alt="logo" />
+        {/* <img src={icono} className="icon-class" alt="logo" /> */}
                  <p>SmartAqua facilita
                  tomar decisiones,
                  anticiparse a las fallas,
