@@ -92,8 +92,23 @@ footer {
       align-items: center;
       justify-content: center;
       flex-direction: column;
+      margin-bottom: 20px;
+    }
+
+    .contact ul{
+      text-align: center;
+    }
+ 
+    .locations{
+      margin-top:20px;
+      align-items: center;
+    }
+       
+    .locations ul{
+      text-align: center;
     }
     .contact h3, .locations h3 {
+      text-align: center;
       font-size: 16px;
     }
   
