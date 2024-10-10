@@ -30,8 +30,8 @@ const Ourclients = () => {
         <div className='testimony-box'>
         
          <p>MARCELO SUÁREZ.<br/>
-         SUBSECRETARIO DE OBRAS Y SERVICIOS.PÉREZ(SANTA FE)<br />
-         PROVINCIA DE SANTA FE</p>
+         SUBSECRETARIO DE OBRAS Y SERVICIOS. PÉREZ (SANTA FE)<br />
+       </p>
         </div>
 
         </article>
