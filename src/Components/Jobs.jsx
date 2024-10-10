@@ -27,7 +27,7 @@ const Jobs = () => {
                         <img src={imgtrabajo3} alt="trabajo publicado" />
                         </div>
                         <div>
-                        <img src={imgtrabajo4} style={{height:"250px"}} alt="trabajo publicado" />
+                        <img src={imgtrabajo4}  alt="trabajo publicado" />
                         </div>
                     </article>
                 </div>

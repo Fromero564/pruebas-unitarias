@@ -9,6 +9,11 @@ const Header = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
+
   return (
     <header className="navbar">
       <div className="logo-container">
@@ -28,10 +33,10 @@ const Header = () => {
       </div>
       <nav className={`nav-menu ${isOpen ? 'open' : ''}`}>
         <ul>
-          <li><a href="#empresa">Empresa</a></li>
-          <li><a href="#productos">Productos</a></li>
-          <li><a href="#clientes">Clientes</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#empresa" onClick={closeMenu}>Empresa</a></li>
+          <li><a href="#productos" onClick={closeMenu}>Productos</a></li>
+          <li><a href="#clientes" onClick={closeMenu}>Clientes</a></li>
+          <li><a href="#contacto" onClick={closeMenu}>Contacto</a></li>
         </ul>
       </nav>
     </header>

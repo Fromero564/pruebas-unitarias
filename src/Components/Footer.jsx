@@ -9,12 +9,10 @@ const Footer = ()=>{
     <div className="contact">
       <h3>CONTACTA CON NOSOTROS</h3>
       <ul>
-        <li><a href="">Instagram</a></li>
-        <li><a href="">Twitter</a></li>
-        <li><a href="">Facebook</a></li>
-        <li><a href="">LinkedIn</a></li>
+        <li><a href="https://www.linkedin.com/company/smartaqua-io/" target='_blank'>LinkedIn</a></li>
+        <li><a href="mailto:juan@smartaqua.io">juan@smartaqua.io</a></li>
+        <li>+54 9 3364 60-6700</li>
       </ul>
-      <p>Correo electrónico</p>
     </div>
 
     <div className="logo">
@@ -24,10 +22,10 @@ const Footer = ()=>{
     <div className="locations">
       <h3>UBICACIONES</h3>
       <ul>
-        <li>Ciudad y Provincia</li>
-        <li>Dirección y número</li>
-        <li>Código Postal</li>
-        <li>País</li>
+        <li>Parque Empresarial Constitución</li>
+        <li>Villa Constitución(2919)</li>
+        <li>Santa Fe</li>
+        <li>Argentina</li>
       </ul>
     </div>
   </div>

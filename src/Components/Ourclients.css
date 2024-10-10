@@ -23,7 +23,7 @@
   height: 100vh; 
   transform: translate(-50%, -50%); 
   width: auto; 
-  opacity: 0.2;
+  opacity: 0.02;
 }
 
 .reviews-boxes {
@@ -46,7 +46,7 @@
 }
 
 .article-class p{
-  height: auto;
+  height: 200px;
 }
 
 .icon-class{

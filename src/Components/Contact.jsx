@@ -130,7 +130,7 @@ const Contact = () => {
                     <div className="div-captcha-submit">
                         <ReCAPTCHA
                             ref={recaptchaRef}
-                            sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
+                            sitekey={import.meta.env.VITE_SITE_KEY}
                             onChange={handleRecaptchaChange} 
                         />
                         <button type="submit" disabled={!recaptchaVerified || !isFormComplete()} style={{ marginLeft: '10px' }}>
@@ -145,3 +145,4 @@ const Contact = () => {
 };
 
 export default Contact;
+ 

@@ -1,6 +1,6 @@
 footer {
     background-color: #fff;
-    padding: 20px;
+    padding-bottom: 10px;
   }
   
   .footer-container {
@@ -9,19 +9,19 @@ footer {
     align-items: flex-start; 
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px 0;
+    padding:5px 0;
   }
   
   .contact {
     flex: 1;
     text-align: left;
-    min-height: 150px;
+    max-height: 100px;
   }
 
   .locations{
     flex: 1;
     text-align: right;
-    min-height: 150px;
+    max-height: 100px;
   }
 
   .logo {
@@ -33,7 +33,7 @@ footer {
   }
   
   .logo img {
-    width: 300px; 
+    width: 250px; 
   }
   
   .contact h3, .locations h3 {
@@ -54,7 +54,7 @@ footer {
   }
   
   p {
-    margin-top: 10px;
+    margin-top: 5px;
   }
   
   .contact li a{
