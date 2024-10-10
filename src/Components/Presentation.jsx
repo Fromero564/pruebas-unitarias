@@ -2,6 +2,8 @@ import './Presentation.css'
 import Carousel from 'react-bootstrap/Carousel';
 import { Button } from 'react-bootstrap'; 
 import Agua from '../assets/img/Presentation/aguapresentacion.jpg'
+import Semaforo from '../assets/img/Presentation/portada2.jpg'
+import Datos from '../assets/img/Presentation/portada3.jpg'
 
 
 
@@ -11,9 +13,9 @@ const Presentation = ()=>{
            <Carousel fade>
       <Carousel.Item interval={1000}>
       <img
-          className="d-block w-100"
+          className="d-block w-100 carousel-image"
           src={Agua}
-          style={{ width: '100vw', height: '100vh' }}
+          style={{  height: '100vh' }}
           alt="Presentación SmartAqua"
         />
         <Carousel.Caption>
@@ -25,13 +27,13 @@ const Presentation = ()=>{
       </Carousel.Item>
       <Carousel.Item interval={1000}>
       <img
-          className="d-block w-100"
-          src={Agua}
-          style={{ width: '100vw', height: '100vh' }}
+          className="d-block w-100 carousel-image"
+          src={Semaforo}
+          style={{  height: '100vh' }}
           alt="Presentación SmartAqua"
         />
         <Carousel.Caption>
-        <h3>TECNOLOGÍA AL SERVICIO DEL AGUA</h3>
+        <h3 style={{color:'#19255b',backgroundColor:'rgba(255,255,255,0.40)'}}>TECNOLOGÍA AL SERVICIO DEL AGUA</h3>
         <a href="#contacto">
           <Button variant="primary">MÁS INFORMACIÓN</Button> 
           </a>
@@ -39,9 +41,9 @@ const Presentation = ()=>{
       </Carousel.Item>
       <Carousel.Item interval={1000}>
       <img
-          className="d-block w-100"
-          src={Agua}
-          style={{ width: '100vw', height: '100vh' }}
+          className="d-block w-100 carousel-image"
+          src={Datos}
+          style={{ height: '100vh' }}
           alt="Presentación SmartAqua"
         />
         <Carousel.Caption>

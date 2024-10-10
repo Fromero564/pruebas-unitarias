@@ -19,6 +19,7 @@
   .Presentation .carousel-caption h3 {
     font-size: 45px;
     margin-top: 150px;
+    
   }
 
   .Presentation .btn-primary {
@@ -35,3 +36,26 @@
     background-color: #0f1c3d; 
   }
 
+
+  .carousel-image {
+    height: 100vh;
+    width: 100%;
+    object-fit:cover;
+    object-position: center;
+  }
+
+  @media (max-width: 768px) {
+    .Presentation{
+      width: 100vw;
+      height: auto;
+      background-color: #0f1c3d;
+  }
+    .Presentation .carousel-caption h3 {
+      font-size: 25px;
+    }
+    .carousel-image {
+      object-fit: contain;
+      height: auto;
+      width: 100%;
+    }
+  }
