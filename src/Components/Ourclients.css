@@ -23,7 +23,7 @@
   height: 100vh; 
   transform: translate(-50%, -50%); 
   width: auto; 
-  opacity: 0.02;
+  opacity: 0.1;
 }
 
 .reviews-boxes {
