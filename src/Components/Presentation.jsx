@@ -13,7 +13,7 @@ const Presentation = ()=>{
            <Carousel fade>
       <Carousel.Item interval={1000}>
       <img
-          className="d-block w-100 carousel-image"
+          className="d-block w-100 "
           src={Agua}
           style={{  height: '100vh' }}
           alt="Presentación SmartAqua"
