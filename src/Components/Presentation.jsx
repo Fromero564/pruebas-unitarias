@@ -33,10 +33,10 @@ const Presentation = ()=>{
           alt="Presentación SmartAqua"
         />
         <Carousel.Caption>
-        <h3 style={{color:'#19255b',backgroundColor:'rgba(255,255,255,0.40)'}}>TECNOLOGÍA AL SERVICIO DEL AGUA</h3>
-        <a href="#contacto">
+        {/* <h3 style={{color:'#19255b'}}>TECNOLOGÍA AL SERVICIO DEL AGUA</h3> */}
+        {/* <a href="#contacto">
           <Button variant="primary">MÁS INFORMACIÓN</Button> 
-          </a>
+          </a> */}
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={1000}>
@@ -47,10 +47,10 @@ const Presentation = ()=>{
           alt="Presentación SmartAqua"
         />
         <Carousel.Caption>
-        <h3>TECNOLOGÍA AL SERVICIO DEL AGUA</h3>
-        <a href="#contacto">
-          <Button variant="primary">MÁS INFORMACIÓN</Button> 
-          </a>
+        {/* <h3>TECNOLOGÍA AL SERVICIO DEL AGUA</h3> */}
+        {/* <a href="#contacto">
+          <Button variant="primary" >MÁS INFORMACIÓN</Button> 
+          </a> */}
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
