@@ -7,7 +7,7 @@ const Footer = ()=>{
         <footer>
   <div className="footer-container">
     <div className="contact">
-      <h3>CONTACTA CON NOSOTROS</h3>
+      <h3>CONTACTÁ CON NOSOTROS</h3>
       <ul>
         <li><a href="https://www.linkedin.com/company/smartaqua-io/" target='_blank'>LinkedIn</a></li>
         <li><a href="mailto:juan@smartaqua.io">juan@smartaqua.io</a></li>
@@ -23,7 +23,7 @@ const Footer = ()=>{
       <h3>UBICACIONES</h3>
       <ul>
         <li>Parque Empresarial Constitución</li>
-        <li>Villa Constitución(2919)</li>
+        <li>Villa Constitución (2919)</li>
         <li>Santa Fe</li>
         <li>Argentina</li>
       </ul>
