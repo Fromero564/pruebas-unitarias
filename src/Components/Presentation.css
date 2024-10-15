@@ -37,13 +37,6 @@
   }
 
 
-  .carousel-image {
-    height: 100vh;
-    width: 100%;
-    object-fit:cover;
-    object-position: center;
-  }
-
   @media (max-width: 768px) {
     .Presentation{
       width: 100vw;
@@ -54,7 +47,7 @@
       font-size: 30px;
     }
     .carousel-image {
-      object-fit: contain;
+      object-fit:fill;
       height: auto;
       width: 100%;
     }
