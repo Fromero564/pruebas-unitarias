@@ -36,7 +36,7 @@ const Presentation = ()=>{
         <Carousel.Caption>
        <h3 style={{
       textShadow: '2px 2px 4px rgba(0, 0, 0, 0.7)'}}>TECNOLOGÍA AL SERVICIO DEL AGUA</h3>
-        <a href="#contacto">
+        <a className="btn-responsive" href="#contacto">
           <Button variant="primary">MÁS INFORMACIÓN</Button> 
           </a> 
         </Carousel.Caption>
